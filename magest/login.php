@@ -19,5 +19,5 @@
 		header('Location: userinfo.php');
 		die();
 	}
-	barring();
+	barring_auth();
 ?>
