@@ -1,0 +1,74 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+header
+	padding-top: 40px
+	padding-bottom: 40px
+	padding-left: 40px
+	background-color: #222
+	& h1
+		font-size: 72px
+		& a
+			color: white
+			&:hover
+				text-decoration: none
+				color: #ccc
+.auth-form
+	padding-top: 80px
+	padding-bottom: 80px
+	padding-left: 40px
+	& form
+		& input
+			display: block
+			padding: 5px 10px
+			width: 220px
+			border: 2px solid black
+			border-radius: 5px
+			margin-bottom: 20px
+		& button
+			display: block
+			margin-bottom: 20px
+			background-color: #222
+			color: white
+			padding: 5px 10px
+			border: 2px solid black
+			border-radius: 2px 	
+		& select
+			margin-bottom: 20px
+.mainpage-header
+	text-align: center
+	& a
+		color: white
+		font-size: 24px
+
+.info-block
+	display: flex
+	justify-content: center
+	padding-top: 80px
+	padding-bottom: 80px
+	&_image
+		& img
+			max-width: 350px
+			max-height: 300px
+	&_form
+		padding-left: 20px
+		& input
+			display: block
+			margin-bottom: 20px
+.userlist
+	border: 1px solid black
+	font-size: 24px
+	margin-bottom: 10px
+	background-color: lightgreen/*#f44*/
+	&_desc
+		display: inline-block
+.error
+	background-color: red
+	padding: 10px
+	color: white
+	&color
+		background-color: #f44
+		& div
+			color: white
