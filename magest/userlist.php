@@ -32,7 +32,7 @@
 				for($i=0;$i<pg_num_rows($result);$i++){
 				$subresult = pg_fetch_row($result,$i);
 				include "userinfo_output.php";
-				if($subresult[3]=="Active"){
+				if($subresult[3]=="Активен"){
 					?>
 					<div class="col-12 userlist">
 					<?php	
@@ -44,13 +44,13 @@
 				?>
 						<div class="row">
 							<div class="col-4 userlist_desc">
-								<a href="userinfo.php?id=<?php echo $subresult[1]?>"><?php echo $subresult[1]?></a>
+								<a href="userinfo.php?id=<?=$subresult[1]?>"><?=$subresult[8]?> <?=$subresult[9]?></a>
 							</div>
 							<div class="col-4 userlist_desc">
-								<?php echo $subresult[3]?>
+								<?=$subresult[3]?>
 							</div>
 							<div class="col-4 userlist_desc">
-								<?php echo $subresult[4]?>
+								<?=$subresult[4]?>
 							</div>
 						</div>
 						

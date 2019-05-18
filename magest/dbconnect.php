@@ -6,7 +6,13 @@
 	$dbpassword = "qwerty123";
 	$connection_string = 'host='.$host.' port='.$port.' user='.$user.' dbname='.$dbname.' password='.$dbpassword;
 	$dbconnect = pg_connect($connection_string) or die();
+	function barring_auth(){
+		header("Location: index.php?error=Неверные учетные данные/пользователя не существует");
+	}
+	function barring_reg(){
+		header("Location: register.php?error=Неверные введенные данные");
+	}
 	function barring(){
-		header("Location: index.php?error=Неверные учетные данные");
+		header("Location: index.php");
 	}
  ?>
